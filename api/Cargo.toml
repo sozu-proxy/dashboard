@@ -1,0 +1,17 @@
+[package]
+name = "sozu-api"
+version = "0.1.0"
+authors = ["Freyskeyd <simon.paitrault@gmail.com>"]
+
+[dependencies]
+sozu-command-lib = "0.2.0"
+sozu-lib = "0.2.0"
+rocket = "0.2.6"
+rocket_codegen = "0.2.6"
+rocket_contrib = "0.2.6"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+unix_socket = "0.5.0"
+mio-uds = "^0.6"
+rand    = "^0.3"
