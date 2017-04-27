@@ -1,6 +1,8 @@
+#![deny(warnings)]
 #![feature(plugin)]
 #![plugin(rocket_codegen)]
 
+//! This crate provide a way to interact with sozu_proxy through REST api
 #[macro_use] extern crate rocket_contrib;
 extern crate mio_uds;
 extern crate rand;
@@ -19,6 +21,7 @@ use std::env;
 use std::sync::Mutex;
 
 const SOCKET_ENV_VAR:&'static str = "SOZU_SOCKET_PATH";
+
 type SozuChannel = Channel<ConfigMessage, ConfigMessageAnswer>;
 
 mod command;
